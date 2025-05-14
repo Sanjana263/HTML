@@ -11,44 +11,36 @@
         <h1>
             Student Registration Form
         </h1>
-        <pre>
+        
     </header>
     <br>
     <hr>
     <main>
        <form action="/action.php">
-       <pre> 
-        <h3>student name :    </h3>
-        <input type="text" placeholder="First name" style="text-transform: capitalize; font-style: italic;">
-        <input type="text" placeholder="Last name" style="text-transform: capitalize;font-style: italic">        
-        <br>
-        <h3>Roll no. :    </h3>
-        <input type="text" placeholder="241H0320189" size="11" maxlength="11" style=" color:black;text-decoration:dotted;background-color: aqua;text-align: center;text-shadow: 0cqmax;">
-        <br>
-        <h3>Father's name :    </h3>
-        <input type="text" style="font-style: oblique;text-align: center;">
-        <br>
-        <h3>Date of birth :     :    </h3>
-        <input type="date" id="day" name="dob" placeholder="DD-MM-YYYY" >
-        <br>
-        <h3>Mobile no. :    </h3>
-        <input type="mobile no." placeholder="+91.........." size="10" maxlength="10" >
-        <br>
-        <h3>Email id :    </h3>
-        <input type="text">
-        <br>
-        <h3>Password :    </h3>
-        <input type="password" placeholder="Enter your password">
-        <br>
-        <h3>Gender :    </h3>
+       
+        student name :
+        <input type="text" placeholder="First name"  name="first name">
+        <input type="text" placeholder="Last name" name="last name" >        
+        Roll no. :    
+        <input type="number" placeholder="241H0320189" name="roll no." size="11" maxlength="11" >
+        Father's name :    
+        <input type="text" name="father name">
+        Date of birth :     :    
+        <input type="date" id="day" name="dob"  >
+        Mobile no. :    
+        <input type="tel" placeholder="+91.........." size="10" name="mobile no." maxlength="10" >
+        Email id :    
+        <input type="email" name="email id">
+        Password :    
+        <input type="password" placeholder="Enter your password" name="passw">
+        Gender :   
         <label for="101">
             <input type="radio" value="male" id="101" name="gender">Male
         </label>
         <label for="102">
             <input type="radio" value="female" id="102" name="gender">Female
         </label>
-        <br>
-        <h3>Department :    </h3>
+        Department :    
         <label for="103">
             <input type="radio" value="CSE" id="103" name="Department">CSE
         </label>
@@ -64,8 +56,7 @@
         <label for="107">
             <input type="radio" value="MECH" id="107" name="Department">MECH
         </label>
-         <br>
-         <h3>City :    </h3>
+         City :    
           <select name="city">
             <option value="Delhi">Delhi</option>
              <option value="Up">Up</option>
@@ -80,12 +71,10 @@
              <option value="agra">Agra</option>
              <option value="surat">surat</option>
         </select>
-        <br>
-        <h3>Address :    </h3>
+        Address :    
         <input type="text">
-        <br>
         <input type="submit" value="submit">
-       </pre>
+       
 
 
 

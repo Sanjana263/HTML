@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -11,76 +12,103 @@
     </header>
     <hr>
     <main>
-        <form action="/action.php">
+        <form action="/action.php" method="POST">
+            <div class="form-group">
+                <label>Student Name</label>
+                <div class="name-group">
+                    <input type="text" placeholder="First name" name="first_name" required>
+                    <input type="text" placeholder="Last name" name="last_name" required>
+                </div>
+            </div>
 
-            Student name :
-            <input type="text" placeholder="First name" name="first name">
-            <input type="text" placeholder="Last name" name="last name">        
+            <div class="form-group">
+                <label for="roll_no">Roll Number</label>
+                <input type="text" id="roll_no" placeholder="241H0320189" name="roll_no" maxlength="11" required>
+            </div>
 
-            Roll no. :
-            <input type="number" placeholder="241H0320189" name="roll no." size="11" maxlength="11">
+            <div class="form-group">
+                <label for="father_name">Father's Name</label>
+                <input type="text" id="father_name" name="father_name" required>
+            </div>
 
-            Father's name :
-            <input type="text" name="father name">
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
 
-            Date of birth :
-            <input type="date" id="day" name="dob">
+            <div class="form-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" placeholder="+91.........." name="mobile_no" maxlength="10" required>
+            </div>
 
-            Mobile no. :
-            <input type="tel" placeholder="+91.........." size="10" name="mobile no." maxlength="10">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-            Email id :
-            <input type="email" name="email id">
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" name="password" required>
+            </div>
 
-            Password :
-            <input type="password" placeholder="Enter your password" name="passw">
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <label for="male">
+                        <input type="radio" id="male" value="male" name="gender" required> Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" value="female" name="gender" required> Female
+                    </label>
+                </div>
+            </div>
 
-            Gender :
-            <label for="101">
-                <input type="radio" value="male" id="101" name="gender"> Male
-            </label>
-            <label for="102">
-                <input type="radio" value="female" id="102" name="gender"> Female
-            </label>
+            <div class="form-group">
+                <label>Department</label>
+                <div class="department-group">
+                    <label for="cse">
+                        <input type="radio" id="cse" value="CSE" name="department" required> CSE
+                    </label>
+                    <label for="it">
+                        <input type="radio" id="it" value="IT" name="department" required> IT
+                    </label>
+                    <label for="ece">
+                        <input type="radio" id="ece" value="ECE" name="department" required> ECE
+                    </label>
+                    <label for="civil">
+                        <input type="radio" id="civil" value="CIVIL" name="department" required> CIVIL
+                    </label>
+                    <label for="mech">
+                        <input type="radio" id="mech" value="MECH" name="department" required> MECH
+                    </label>
+                </div>
+            </div>
 
-            Department :
-            <label for="103">
-                <input type="radio" value="CSE" id="103" name="Department"> CSE
-            </label>
-            <label for="104">
-                <input type="radio" value="IT" id="104" name="Department"> IT
-            </label>
-            <label for="105">
-                <input type="radio" value="ECE" id="105" name="Department"> ECE
-            </label>
-            <label for="106">
-                <input type="radio" value="CIVIL" id="106" name="Department"> CIVIL
-            </label>
-            <label for="107">
-                <input type="radio" value="MECH" id="107" name="Department"> MECH
-            </label>
+            <div class="form-group">
+                <label for="city">City</label>
+                <select id="city" name="city" required>
+                    <option value="">Select your city</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Up">UP</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Bhopal">Bhopal</option>
+                    <option value="Indore">Indore</option>
+                    <option value="Kanpur">Kanpur</option>
+                    <option value="Agra">Agra</option>
+                    <option value="Surat">Surat</option>
+                </select>
+            </div>
 
-            City :
-            <select name="city">
-                <option value="Delhi">Delhi</option>
-                <option value="Up">Up</option>
-                <option value="Bangalore">Bangalore</option>
-                <option value="chennai">chennai</option>
-                <option value="Mumbai">Mumbai</option>
-                <option value="kolkata">kolkata</option>
-                <option value="jaipur">jaipur</option>
-                <option value="Bhopal">Bhopal</option>
-                <option value="indor">indor</option>
-                <option value="kanpur">kanpur</option>
-                <option value="agra">Agra</option>
-                <option value="surat">surat</option>
-            </select>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
 
-            Address :
-            <input type="text">
-
-            <input type="submit" value="submit">
-
+            <button type="submit" class="submit-btn">Submit</button>
         </form>
     </main>
 </body>
